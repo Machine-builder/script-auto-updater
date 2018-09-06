@@ -28,7 +28,7 @@ else:
     input("press enter to download the update ...")
     downloadGitFile("script.py")
     LOCATION = "downloads\\%s" % ( "script.py".replace(".py",PYTHONEXTENSION))
-    DESTINATION = "script.py".replace(".py",PYTHONEXTENSION)
+    DESTINATION = "RunMe.py".replace(".py",PYTHONEXTENSION)
     shutil.move( LOCATION , DESTINATION )
     print("'RunMe' has been updated!")
     open("downloads\\curver.json","w").write(json.dumps({"VERSION":newver}))
