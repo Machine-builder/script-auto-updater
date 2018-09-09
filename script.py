@@ -32,3 +32,5 @@ else:
     shutil.move( LOCATION , DESTINATION )
     print("'RunMe' has been updated!")
     open("downloads\\curver.json","w").write(json.dumps({"VERSION":newver}))
+    
+# COMMENT
